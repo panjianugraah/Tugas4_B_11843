@@ -49,11 +49,10 @@ if uploaded_file is not None:
     st.markdown("<h1 style='text-align: center;'>Unsupervised Learning 11843</h1>", unsafe_allow_html=True)  # YYYYY diisi dengan nama panggilan
     st.dataframe(input_data)
 
-    model_directory = r'C:\Users\bravo\Downloads\Documents\Unsupervised Learning (Praktek)\Tugas4_B_11843'
     model_paths = {
-        "AGG_model": os.path.join(model_directory, r'AGG_model.pkl'),
-        "KMeans_model": os.path.join(model_directory, r'KMeans_mode.pkl'),
-        "DBSCAN_model": os.path.join(model_directory, 'DBSCAN_model.pkl'),
+        "AGG_model": r'AGG_model.pkl',
+        "KMeans_model": r'KMeans_mode.pkl',
+        "DBSCAN_model": 'DBSCAN_model.pkl',
     }
 
     models = {}
